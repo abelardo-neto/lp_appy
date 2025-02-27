@@ -13,12 +13,13 @@
     <title>Appy</title>
 </head>
 
-<body class="font-[Roboto] text-gray-800 leading-[1.4rem] bg-white max-w-sm m-auto border border-gray-200 shadow-xl">
+<body class="font-[Roboto] text-gray-800 leading-[1.4rem] bg-white max-w-4xl m-auto border border-gray-200 shadow-xl">
+    <!-- max-w-sm m-auto border border-gray-200 shadow-xl -->
 
     <!-- HEADER -->
 
     <header class="border-b border-gray-200">
-        <nav class="flex justify-between items-center px-4 my-4">
+        <nav class="flex justify-between items-center px-4 my-4 md:px-10">
             <div>
                 <a class="text-blue-600 text-3xl font-bold leading-9" href="#">Appy</a>
             </div>
@@ -32,48 +33,50 @@
 
     <!-- SECTION | BUILDING APPS -->
 
-    <section class="my-12 px-4 flex flex-col justify-between gap-8 text-center">
-        <div class="flex flex-col gap-6">
-            <h2 class="text-[2.5rem] font-bold leading-[2.75rem]">Building apps just got easier</h2>
-            <p class="text-lg font-normal leading[1.4rem]">Aliquam vel platea curabitur sit vestibulum egestas sit id
+    <section
+        class="my-12 px-4 flex flex-col justify-between gap-8 text-center md:flex-row md:gap-10 md:items-center md:px-10 md:my-20">
+        <div class="flex flex-col gap-6 md:max-w-1/2 md:text-left">
+            <h2 class="text-[2.5rem] font-bold leading-[2.75rem] md:text-5xl md:leading-12">Building apps just got easier</h2>
+            <p class="text-lg font-normal">Aliquam vel platea curabitur sit vestibulum egestas sit id
                 lorem. Aliquet neque, dui sed eget
                 scelerisque. Non at at venenatis tortor amet feugiat ullamcorper in. Odio vulputate cras vel lacinia
                 turpis volutpat adipiscing. Sollicitudin at velit, blandit tempus nunc in.</p>
-            <div class="flex items-center justify-between gap-8 px-2.5">
+            <div class="flex items-center justify-between gap-8 px-2.5 md:px-0">
                 <button
-                    class="bg-blue-600 text-white leading-6 tracking-wider rounded-lg p-3 flex-grow cursor-pointer whitespace-nowrap w-3/5">Get
+                    class="bg-blue-600 text-white leading-6 tracking-wider rounded-lg p-3 flex-grow cursor-pointer whitespace-nowrap w-3/5 md:text-xl md:py-5 md:px-6 md:w-1/2">Get
                     Started</button>
-                <a class="flex-grow px-2 py-3 text-blue-600 font-medium flex flex-row whitespace-nowrap" href="#">
-                    <i class="fa-solid fa-play flex-grow content-center text-xl"></i>
-                    <p class="flex-grow content-center px-4 leading-snug tracking-wider">Watch Video</p>
+                <a class="flex-grow px-2 py-3 text-blue-600 font-medium flex flex-row whitespace-nowrap md:w-1/2 md:text-xl"
+                    href="#">
+                    <i class="fa-solid fa-play content-center text-xl"></i>
+                    <p class="content-center px-4 leading-snug tracking-wider">Watch Video</p>
                 </a>
             </div>
         </div>
         <div class="flex justify-center">
-            <img class="w-full sm:w-auto" src="../assets/smartphone-1.svg" alt="smartphone">
+            <img class="w-full max-w-md" src="../assets/smartphone-1.svg" alt="smartphone">
         </div>
     </section>
 
     <!-- SECTION | CIRCLE ICONS -->
 
-    <section class="flex flex-col gap-20 text-center py-12 px-4 bg-gradient-to-b from-gray-50 to-transparent">
+    <section class="flex flex-col gap-20 text-center py-12 px-4 bg-gradient-to-b from-gray-50 to-transparent md:flex-row md:px-10 md:py-20 md:gap-12">
         <div class="flex flex-col items-center gap-6"">
             <div class=" relative">
-            <img src="../assets/icon-red.svg" alt="red icon">
-            <img class="absolute bottom-[0.4rem] right-[0.4rem]" src="../assets/circle-red.svg" alt="red circle">
-        </div>
-        <h2 class="font-bold text-2xl leading-[1.65rem]">Fermentum amet</h2>
-        <p class="text-lg font-normal leading-[1.8rem]">Pellentesque quis tincidunt sit sed. Tortor massa sed habitant
+                <img src="../assets/icon-red.svg" alt="red icon">
+                <img class="absolute bottom-[0.4rem] right-[0.4rem]" src="../assets/circle-red.svg" alt="red circle">
+            </div>
+            <h2 class="font-bold text-2xl leading-[1.65rem]">Fermentum amet</h2>
+            <p class="text-lg font-normal leading-[1.8rem]">Pellentesque quis tincidunt sit sed. Tortor massa sed habitant
             dignissim senectus purus. Consectetur integer
             id in et pulvinar interdum id.</p>
         </div>
         <div class="flex flex-col items-center gap-6"">
             <div class=" relative">
-            <img src="../assets/icon-yellow.svg" alt="yellow icon">
-            <img class="absolute bottom-[0.4rem] left-[0.4rem]" src="../assets/circle-yellow.svg" alt="yellow circle">
-        </div>
-        <h2 class="font-bold text-2xl leading-[1.65rem]">Dignissim quam</h2>
-        <p class="text-lg font-normal leading-[1.8rem]">Quam sed neque vitae viverra purus venenatis ac non. Eget sed
+                <img src="../assets/icon-yellow.svg" alt="yellow icon">
+                <img class="absolute bottom-[0.4rem] left-[0.4rem]" src="../assets/circle-yellow.svg" alt="yellow circle">
+            </div>
+            <h2 class="font-bold text-2xl leading-[1.65rem]">Dignissim quam</h2>
+            <p class="text-lg font-normal leading-[1.8rem]">Quam sed neque vitae viverra purus venenatis ac non. Eget sed
             nunc, amet, nibh nulla. Morbi sed risus ullamcorper diam, elit ut non.</p>
         </div>
         <div class="flex flex-col items-center gap-6">
@@ -89,70 +92,80 @@
 
     <!-- SECTION | ESSENTIAL TOOLS -->
 
-    <section class="flex flex-col gap-8 px-4 my-12">
+    <section class="flex flex-col gap-8 md:gap-20 px-4 md:px-10 my-12 md:my-20">
         <div class="flex flex-col gap-6 text-center">
-            <h2 class="font-bold text-[2rem] leading-9">All the essential tools</h2>
-            <p class="text-lg font-normal leading-[1.8rem]">Odio vulputate cras vel lacinia turpis volutpat adipiscing.
+            <h2 class="font-bold text-[2rem] md:text-5xl leading-9">All the essential tools</h2>
+            <p class="text-lg md:text-base font-normal leading-[1.8rem]">Odio vulputate cras vel lacinia turpis volutpat adipiscing.
                 Sollicitudin at velit, blandit tempus nunc in.</p>
         </div>
-        <div class="flex justify-center">
-            <img class="w-full sm:w-auto" src="../assets/smartphone-2.svg" alt="smartphone">
-        </div>
-        <div class="flex flex-col gap-4">
-            <div class="pl-6 border-l-[0.1875rem] border-blue-600 flex flex-col gap-4">
-                <h3 class="font-medium text-lg leading-[1.2375rem] pt-2">Sem augue tempus</h3>
-                <p class="text-lg font-normal leading-[1.4rem] pb-2">Venenatis blandit habitasse nunc, sapien enim elit
-                    in. Arcu, pharetra, et cursus sit senectus in blandit. Aliquet enim fermentum non semper nibh ut
-                    neque. Pellentesque ut tincidunt vitae arcu bibendum malesuada lorem sapien volutpat.</p>
+        <div class="md:flex md:items-center">
+            <div class="flex justify-center md:min-w-1/2">
+                <img class="w-full max-w-md pb-8 md:pb-0" src="../assets/smartphone-2.svg" alt="smartphone">
             </div>
-            <h3 class="pl-6 font-medium text-lg leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Habitant
-                integer interdum a</h3>
-            <h3 class="pl-6 font-medium text-lg leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Tempus
-                natoque id</h3>
+            <div class="flex flex-col gap-4">
+                <div class="pl-6 border-l-[0.1875rem] border-blue-600 flex flex-col gap-4">
+                    <h3 class="font-medium text-lg md:text-xl leading-[1.2375rem] pt-2">Sem augue tempus</h3>
+                    <p class="text-lg md:text-base font-normal leading-[1.4rem] pb-2">Venenatis blandit habitasse nunc, sapien enim elit
+                        in. Arcu, pharetra, et cursus sit senectus in blandit. Aliquet enim fermentum non semper nibh ut
+                        neque. Pellentesque ut tincidunt vitae arcu bibendum malesuada lorem sapien volutpat.</p>
+                </div>
+                <h3 class="pl-6 font-medium text-lg md:text-xl leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Habitant
+                    integer interdum a</h3>
+                <h3 class="pl-6 font-medium text-lg md:text-xl leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Tempus
+                    natoque id</h3>
+            </div>
         </div>
     </section>
 
     <!-- SECTION | FOCUS WHAT MATTERS -->
 
-    <section class="flex flex-col gap-8 px-4 py-12 items-center">
+    <section class="flex flex-col gap-8 md:gap-20 px-4 md:px-10 py-12 md:py-20 items-center">
         <div class="flex flex-col gap-6 text-center">
-            <h2 class="font-bold text-[2rem] leading-9">Focus on what matters</h2>
-            <p class="text-lg font-normal leading-[1.8rem]">Eget at purus mauris euismod metus vitae eget. Diam massa
+            <h2 class="font-bold text-[2rem] md:text-5xl leading-9">Focus on what matters</h2>
+            <p class="text-lg md:text-base font-normal leading-[1.8rem]">Eget at purus mauris euismod metus vitae eget. Diam massa
                 venenatis pellentesque facilisis nunc, varius.</p>
         </div>
-        <div class="flex justify-center">
-            <img class="w-full sm:w-auto" src="../assets/smartphone-3.svg" alt="smartphone">
-        </div>
-        <div class="flex flex-col gap-4">
-            <div class="pl-6 border-l-[0.1875rem] border-blue-600 flex flex-col gap-4">
-                <h3 class="font-medium text-lg leading-[1.2375rem] pt-2">Bibendum gravida dolor egestas aliquam</h3>
-                <p class="text-lg font-normal leading-[1.4rem] pb-2">Egestas tincidunt hendrerit nibh platea sit vivamus
-                    aenean rhoncus etiam. Tristique amet, sed ac ac dolor habitant. Mauris duis neque molestie venenatis
-                    nibh hendrerit pharetra. Tortor suscipit leo sit tellus ac scelerisque gravida sem.</p>
+        <div class="md:flex  md:items-center">
+            <div class="flex justify-center md:min-w-1/2">
+                <img class="w-full max-w-md pb-8 md:pb-0" src="../assets/smartphone-3.svg" alt="smartphone">
             </div>
-            <h3 class="pl-6 font-medium text-lg leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2 ">Egestas
-                lorem eget</h3>
-            <h3 class="pl-6 font-medium text-lg leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Tellus
-                eget feugiat sit</h3>
+            <div class="flex flex-col gap-4">
+                <div class="pl-6 border-l-[0.1875rem] border-blue-600 flex flex-col gap-4">
+                    <h3 class="font-medium text-lg md:text-xl leading-[1.2375rem] pt-2">Bibendum gravida dolor egestas aliquam</h3>
+                    <p class="text-lg font-normal md:text-base leading-[1.4rem] pb-2">Egestas tincidunt hendrerit nibh platea sit vivamus
+                        aenean rhoncus etiam. Tristique amet, sed ac ac dolor habitant. Mauris duis neque molestie venenatis
+                        nibh hendrerit pharetra. Tortor suscipit leo sit tellus ac scelerisque gravida sem.</p>
+                </div>
+                <h3 class="pl-6 font-medium text-lg md:text-xl leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2 ">Egestas
+                    lorem eget</h3>
+                <h3 class="pl-6 font-medium text-lg md:text-xl leading-[1.2375rem] border-l-[0.1875rem] border-gray-300 py-2">Tellus
+                    eget feugiat sit</h3>
+            </div>
         </div>
+        <div class="hidden md:block flex justify-center gap-8 px-2.5">
+            <button
+                class="bg-blue-600 text-white leading-6 tracking-wider rounded-lg  cursor-pointer whitespace-nowrap text-xl py-5 px-6 w-50">Get
+                Started</button>
+        </div>        
     </section>
 
     <!-- SECTION | SUCCESS STORIES -->
 
-    <section class="flex flex-col gap-8 px-4 py-12 bg-gray-100">
-        <div class="flex justify-center">
-            <img class="w-full sm:w-auto" src="../assets/marie-mobile.svg" alt="Marie Poirot">
+    <section class="flex flex-col md:flex-row gap-8 md:gap-10 px-4 md:px-10 py-12 md:py-20 bg-gray-100">
+        <div class="flex justify-center md:min-w-1/2">
+            <img class="w-full sm:w-auto md:hidden" src="../assets/marie-mobile.svg" alt="Marie Poirot">
+            <img class="w-full hidden md:block" src="../assets/marie-desktop.svg" alt="Marie Poirot">
         </div>
-        <div class="flex flex-col gap-4 text-center items-center">
+        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start">
             <h4 class="uppercase text-gray-600 font-bold text-xl leading-5 tracking-widest">Success Stories</h4>
-            <blockquote class="text-lg leading-7">
-                <span class="text-yellow-500">“ </span>
+            <blockquote class="text-lg md:text-2xl leading-7">
+                <span class="text-yellow-500 md:text-2xl">“ </span>
                 Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis est velit in. Nibh in purus sit
                 convallis phasellus ut. At vel erat ultricies commodo. Neque suspendisse a habitasse commodo.
-                <span class="text-red-500"> ”</span>
+                <span class="text-red-500 md:text-2xl"> ”</span>
             </blockquote>
             <p class="text-lg leading-7">
-                Marie Poirot,<br><span class="font-medium text-xl leading-6">Bigapp</span>
+                Marie Poirot,<br><span class="font-medium text-xl md:text-lg leading-6">Bigapp</span>
             </p>
             <div>
                 <img class="mt-8 cursor-pointer" src="../assets/slider.svg" alt="slider">
@@ -162,15 +175,15 @@
 
     <!-- SECTION | FAQ -->
 
-    <section class="flex flex-col px-4 my-12">
+    <section class="flex flex-col px-4 md:px-10 my-12 md:my-20">
         <div>
-            <h2 class="text-center font-bold text-3xl pb-8">Answers to your questions</h2>
+            <h2 class="text-center font-bold text-3xl md:text-[2.5rem] pb-8 md:pb-20">Answers to your questions</h2>
         </div>
 
         <!-- Question 01 -->
         <div class="border-t border-gray-200 py-8">
             <button class="w-full text-left flex justify-between cursor-pointer">
-                <span class="text-lg  leading-7 text-blue-600">Enim sodales consequat adipiscing facilisis massa
+                <span class="text-lg leading-7 text-blue-600">Enim sodales consequat adipiscing facilisis massa
                     venenatis, non lorem lobortis?</span>
                 <i class="fa-solid fa-chevron-down text-blue-600 text-base"></i>
             </button>
@@ -215,14 +228,14 @@
 
     <!-- SECTION | START NOW -->
 
-    <section class="py-12 px-4 flex flex-col justify-between gap-8 text-center bg-gray-100">
-        <div class="flex flex-col gap-6">
+    <section class="py-12 md:py-20 px-4 md:px-10 flex flex-col md:flex-row justify-between gap-8 text-center md:text-left bg-gray-100">
+        <div class="flex flex-col gap-6 md:max-w-1/2">
             <h2 class="text-[2.5rem] font-bold leading-[2.75rem]">Start now and get the best services</h2>
             <p class="text-lg font-normal leading[1.4rem]">Ac urna elementum purus vulputate tincidunt. Quam maecenas
                 feugiat congue orci, eget tellus pellentesque aliquet. Felis fringilla morbi dui ac consequat risus
                 pharetra odio pulvinar. Id pellentesque in tortor nec nulla cras sapien. Adipiscing nisi tellus quisque
                 aliquet sit risus elementum scelerisque.</p>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center md:items-start justify-center md:justify-start">
                 <button
                     class="bg-blue-600 text-white tracking-wider rounded-lg py-5 px-6 cursor-pointer whitespace-nowrap w-5/7 text-2xl font-bold">Get
                     Started</button>
@@ -235,8 +248,8 @@
 
     <!-- FOOTER -->
 
-    <footer class="flex flex-col px-4 text-center text-gray-600">
-        <div class="border-b border-gray-200 py-12">
+    <footer class="flex flex-col px-4 md:px-20 text-center text-gray-600 ">
+        <div class="border-b border-gray-200 py-12 md md:grid md:grid-cols-3 md:grid-rows-2 md:gap-y-8">
             <!-- FOOTER | CATEGORIES -->
             <div>
                 <h4 class="py-3 text-base font-medium leading-4">Categories</h4>
@@ -315,16 +328,16 @@
                 </ul>
             </div>
         </div>
-        
-        <div class="flex flex-col gap-4 py-4">
-            <div>
+
+        <div class="flex flex-col md:flex-row md:justify-between gap-4 py-4 md:pt-12 md:pb-8">
+            <div class="md:w-1/3 md:text-start">
                 <a class="font-bold text-blue-600 text-2xl leading-6" href="#">Appy</a>
             </div>
-            <div>
+            <div class="md:w-1/3 md:text-center">
                 <p>@ 2023 All rights reserved.</p>
             </div>
-            <div>
-                <ul class="flex items-center justify-center gap-4">
+            <div class="md:w-1/3">
+                <ul class="flex items-center justify-center md:justify-end gap-4 ">
                     <li><a href="#"><img src="../assets/youtube.svg" alt="Youtube"></a></li>
                     <li><a href="#"><img src="../assets/facebook.svg" alt="Facebook"></a></li>
                     <li><a href="#"><img src="../assets/twitter.svg" alt="Twitter"></a></li>
